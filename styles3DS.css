@@ -1,0 +1,80 @@
+/* Geral */
+body {
+    color: white;
+    background: black;
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+    text-align: center;
+}
+
+/* Seção Chamada */
+.chamada {
+    background: rgb(184, 156, 213);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.chamada-texto h1 {
+    font-size: 40px;
+}
+
+.chamada-texto p {
+    font-size: 20px;
+}
+
+/* Seção Categoria */
+.categoria {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    margin-bottom: 20px;
+}
+
+/* Grid para vídeos */
+.categoria-videos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-content: center;
+    text-align: center;
+}
+
+.categoria-videos figure {
+    margin: 0; /* Remove margens padrão do figure */
+    text-align: center;
+}
+
+.categoria-videos img {
+    width: 100%; /* Ocupa toda a largura da célula */
+    height: 150px; /* Define altura uniforme */
+    object-fit: cover; /* Ajusta o conteúdo para caber sem distorcer */
+    border-radius: 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.categoria-videos img:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+    border: 2px solid green;
+}
+
+.categoria-videos figcaption {
+    margin-top: 8px; /* Espaçamento entre a imagem e o texto */
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
